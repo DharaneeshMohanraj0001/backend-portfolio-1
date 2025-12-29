@@ -24,7 +24,7 @@ app.use(express.json());
 app.use("/api", contactRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Backend started successfully 🚀");
+  res.status(200).send("Backend started successfully 🚀");
 });
 
 
@@ -32,6 +32,7 @@ app.get("/", (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
   console.log(`Server running on port ${PORT}`);
 });
+
 
 
 
